@@ -128,4 +128,4 @@ environments:
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 
 myApp:
-    value: '${PID}'
+    value: '${PID ?: foo}'
