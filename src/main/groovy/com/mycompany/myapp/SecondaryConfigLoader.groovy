@@ -21,7 +21,7 @@ class SecondaryConfigLoader implements GrailsApplicationLifeCycle {
 
     @Override
     void doWithApplicationContext() {
-        loadSecurityConfig()
+//        loadSecurityConfig()
         log.info "Loaded secondary config"
     }
 
@@ -32,7 +32,7 @@ class SecondaryConfigLoader implements GrailsApplicationLifeCycle {
 
     @Override
     void onStartup(Map<String, Object> event) {
-
+        loadSecurityConfig()
     }
 
     @Override
